@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body{
+  background-color: #F3F5FC;
+}
+
+/* ----------------------------- HEADER ----------------------------- */
+header{
+  padding: 30px;
+}
+/* ----------------------------- M A I N ----------------------------- */
+main{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px 0 50px;
+  width: 100%;
+}
+
+/* ------------ Section Input ------------ */
+#input-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.text-area{
+  width: 680px;
+  height: 610px;
+  font-size: 32px;
+  font-weight: 400;
+  padding-top: 30px;
+  border: none;
+  resize: none;
+  background-color: #F3F5FC;
+  outline: none;
+  color: #0A3871;
+  word-wrap: break-word;
+  text-transform: lowercase;
+  width: 100%;
+}
+
+.text-area::placeholder{
+  color:  #0A3871;
+  text-transform: none;
+}
+
+.container-info-botones{
+  width: 100%;
+}
+
+.info-input{
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  color: #495057;
+}
+
+.botones{
+  display: flex;
+  gap: 24px;
+  padding: 24px 0;
+  width: 100%;
+}
+
+.btn{
+  width: 328px;
+  height: 67px;
+  border-radius: 24px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.btn-encriptar{
+  background: #0A3871;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-encriptar:hover{
+  background-color: #072B61;
+}
+
+
+.btn-desencriptar{
+  background-color: #E5E5E5;
+  border: 1px solid #0A3871;
+  color: #0A3871;
+  cursor: pointer;
+}
+
+.btn-desencriptar:hover{
+  background-color: #EFF1FA;
+}
+
+/* ------------ Section Output ------------ */
+#output-section{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  padding: 0px 10px;
+  border-radius: 32px;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  width: 32%;
+  height: 761px;
+}
+
+.container-mensaje{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.munieca{
+  width: 100%;
+  max-width: 500px;
+}
+
+.container-info-output{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 0 10px;
+}
+
+.titulo-output{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.msj-output{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+}
+
+.container-resultado{
+  display: none;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 25px 10px;
+}
+
+.texto-resultado{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  /* or 36px */
+
+  color: #495057;
+}
+
+.btn-copiar{
+  width: 100%;
+  max-width: 336px;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  background-color: white;
+  cursor: pointer;
+  color: #0A3871;
+}
+
+.btn-copiar:hover{
+  background-color: #E5E5E5;
+}
+
+
+/* ----------------------------- FOOTER ----------------------------- */
+footer{
+  background-color: #052051;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  padding: 30px 0;
+}
+
+
+
+/* ----------------------------- M e d i a q u e r i s ----------------------------- */
+@media(max-width: 768px){
+  main{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #input-section{
+    width: 80%;
+  }
+
+  #output-section{
+    width: 80%;
+    height: 100%;
+    padding: 32px 10px;
+  }
+
+  .munieca{
+    display: none;
+  }
+}
+
+@media(max-width: 425px){
+  .botones{
+    flex-direction: column;
+  }
+
+  .btn{
+    width: 100%;
+  }
+}
+
+
+

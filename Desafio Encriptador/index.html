@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Mágico</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <img src="assets/img/Logo.png" alt="Logo Alura" class="Logo">
+    </header>
+
+
+    <main>
+      <!-- --------------------- Seccion Input ------------------- -->
+      <section id="input-section">
+        <textarea placeholder="Ingrese el texto aqui" class="text-area"></textarea>
+        <div class="container-info-botones">
+          <div class="info-input">
+            <img src="assets/img/icono-atencion.png" alt="Icono de Atencion">
+            <p>Solo letras minúsculas y sin acentos</p>
+          </div>
+          <div class="botones">
+            <button class="btn btn-encriptar" onclick="mostrarEncriptar()">Encriptar</button>
+            <button class="btn btn-desencriptar" onclick="mostrarDesencriptar()">Desencriptar</button>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- --------------------- Seccion Output ------------------- -->
+      <section id="output-section">
+        <!-- Contenedor (Muñeco + Mensaje) Visible Inicialmente  -->
+        <div class="container-mensaje">
+          <img src="assets/img/Muñeco.png" alt="Persona Buscando" class="munieca">
+          <div class="container-info-output">
+            <p class="titulo-output">Ningún mensaje fue encontrado</p>
+            <p class="msj-output">Ingresa el texto que desees encriptar o desencriptar.</p>
+          </div>
+        </div>
+        <!-- Contenedor (Resultado) Invisible Inicialmente  -->
+        <div class="container-resultado">
+          <p class="texto-resultado"></p>
+          <button class="btn btn-copiar" onclick="copiarTexto()">Copiar</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Hecho con ❤️ by Giuliano Ezequiel Moyano Muscari</p>
+    </footer>
+  </body>
+</html>
